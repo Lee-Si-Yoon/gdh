@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C4</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 가로로 길면*/ 
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        overflow-x: hidden;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .frame__container iframe {
+        /*세로로 길면*/
+        width: 91%;
+        height: 11.4%;
+        position: absolute;
+        top: 2.5%;
+        left: 3.3%;
+      }
+
+      .button1 img{
+        position: absolute;
+        height: 1.78%;
+        left: 48.8%;
+        top: 12.85%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 1rem red);
+      }
+      .button1 img:hover, .button1 img:active{
+        filter: drop-shadow(0 0 2rem #333);
+        opacity: .2;
+      }
+      .button2 img{
+        position: absolute;
+        height: 1.7%;
+        left: 17%;
+        top: 0%;
+        transform: translateX(-50%);
+        /*filter: drop-shadow(0 0 1rem blue);*/
+      }/*
+      .button2 img:hover, .button2 img:active{
+        filter: drop-shadow(0 0 2rem #333);
+        opacity: .2;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <img src="c4_base.png" alt="b2_base" class="frame"/>
+      <iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+      
+      <a href="https://lee-si-yoon.github.io/gdh/d/b02.html" class="button1">
+          <img src="c4_button01.png" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/gdh/d/b02.html" class="button2">
+        <img src="c4_button02.gif" alt="btn2" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

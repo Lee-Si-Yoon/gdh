@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .button1 img{
+        position: absolute;
+        height: .5%;
+        left: 50%;
+        top: 1.84%;
+        transform: translateX(-50%);
+        
+      }
+      .button1 img:hover, .button1 img:active{
+        filter: drop-shadow(0 0 2rem #333);
+      }
+      .button2 img{
+        position: absolute;
+        height: .25%;
+        left: 50%;
+        top: 3.8%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 2rem red);
+      }
+      .button2 img:hover, .button2 img:active{
+        transform: scale(1.5);
+        transform-origin: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <img src="b2_base.png" alt="b2_base" class="frame"/>
+      <a href="https://lee-si-yoon.github.io/gdh/index.html" class="button1">
+          <img src="b2_button01.png" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/gdh/index.html" class="button2">
+          <img src="b2_button02_2.png" alt="btn2" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

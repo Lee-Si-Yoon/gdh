@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dead2</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 세로로 길면*/
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .frame {
+        /*세로로 길면
+        width: 100%;*/
+        /*가로로 길면*/
+        height: 100%;
+      }
+      .button1 img{
+        position: absolute;
+        top: 64.8%;
+        left: 65%;
+        height: 5.3%;
+        transform: translateX(-50%);
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: 1;
+        filter: drop-shadow(0 0 1rem white);
+      }
+      .button2 img{
+        position: absolute;
+        top: 70%;
+        left: 65%;
+        height: 6%;
+        transform: translateX(-50%);
+      }
+      .button2 img:hover, .button2 img:active{
+        opacity: 1;
+        filter: drop-shadow(0 0 1rem white);
+      }
+      .button3{
+        position: absolute;
+        top: 30%;
+        left: 65%;
+        height: 10%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
+
+      <img src="dead2_base.jpg" alt="base" class="frame" />
+
+      <a href="https://lee-si-yoon.github.io/gdh/g/g3.html" class="button1">
+          <img src="dead2_button01.png" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/gdh/ends/dead02.html" class="button2">
+          <img src="dead2_button02.png" alt="btn2" class="btn_img"/>
+      </a>
+      <img src="dead2_button03.gif" alt="btn2" class="button3"/>
+    </div>
+  </body>
+</html>
