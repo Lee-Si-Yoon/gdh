@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F7</title>
+    <style>
+      @import "../css/reset.css";
+      body{
+            background-color: #f9f9f9;
+        }
+      .frame__container {
+        width: auto;
+        height: auto;
+        /* 세로로 길면
+        height: auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        left: 0;
+        background-color: #f9f9f9;
+        overflow-x: hidden;
+        transform: translateY(-50%);
+      }
+      .frame {
+        /*세로로 길면
+        width: 100%;*/
+        /*가로로 길면*/
+        height: 100%;
+      }
+      .button1 img{
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        height: 19.5%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 1rem pink);
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: .1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
+
+      <img src="f7_base.png" alt="base" class="frame"/>
+      
+      <a href="https://lee-si-yoon.github.io/_goodonghee/g/g6.html" class="button1">
+          <img src="f7_button01.png" alt="btn1" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

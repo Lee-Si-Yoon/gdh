@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv = "refresh" content = "10000; url = #" />
+    <title>D7</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 가로로 길면*/ 
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        overflow-x: hidden;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .frame__container iframe {
+        /*세로로 길면*/
+        width: 91%;
+        height: 12.6%;
+        position: absolute;
+        top: 2.7%;
+        left: 3.3%;
+      }
+      .button1 img{
+        position: absolute;
+        top: 0.2%;
+        left: 8%;
+        height: 1.6%;
+        background-color: white;
+        padding: 0 3%;
+        /*filter: drop-shadow(0 0 1rem red);*/
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: 1;
+      }
+      .button2 img{
+        position: absolute;
+        top: 25.7%;
+        left: 3.3%;
+        height: 3.3%;
+        background-color: #333;
+        padding: 0 3%;
+        /*filter: drop-shadow(0 0 1rem red);*/
+      }
+      .button2 img:hover, .button2 img:active{
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <img src="d7_base.png" alt="base" class="frame"/>
+      <iframe src="https://www.youtube.com/embed/22_sVnNZvMI?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+      
+      <a href="#" class="button1">
+          <img src="d7_button01.gif" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="#" class="button2">
+          <img src="d7_button02.gif" alt="btn2" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

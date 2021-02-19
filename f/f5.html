@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F5</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 가로로 길면*/ 
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        overflow-x: hidden;
+      }
+      .frame__container iframe {
+        /*세로로 길면*/
+        width: 91%;
+        height: 12%;
+        position: absolute;
+        top: 2.5%;
+        left: 3.3%;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .button1 img{
+        position: absolute;
+        top: 7.5%;
+        left: 48.7%;
+        height: 2%;
+        transform: translateX(-50%);
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: .1;
+      }
+      .button2 img{
+        position: absolute;
+        top: 22.6%;
+        left: 15.2%;
+        height: 3.1%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 1rem pink);
+      }
+      .button3{
+        position: absolute;
+        top: 18.4%;
+        left: 83%;
+        height: 2.4%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <img src="f5_base.png" alt="base" class="frame"/>
+      <iframe src="https://www.youtube.com/embed/9x7vQi0UG8o?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+            
+      <a href="https://lee-si-yoon.github.io/_goodonghee/g/g4.html" class="button1">
+          <img src="f5_button01.gif" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/_goodonghee/g/g5.html" class="button2">
+          <img src="f5_button02.gif" alt="btn2" class="btn_img"/>
+      </a>
+      <img src="f5_button03.png" alt="btn2" class="button3"/>
+    </div>
+  </body>
+</html>

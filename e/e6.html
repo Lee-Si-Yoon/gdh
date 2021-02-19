@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E6</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 세로로 길면*/
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        overflow-x: hidden;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .button1 img{
+        position: absolute;
+        top: 26%;
+        left: 36%;
+        height: 6%;
+        transform: translateX(-50%);
+        animation: scalehim 1s ease-in-out infinite;
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: 1;
+      }
+      @keyframes scalehim{
+        0%{  
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
+      }
+      .button2 img{
+        position: absolute;
+        top: 98.2%;
+        left: 18%;
+        height: 1%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 1rem #333;
+      }
+      .button2 img:hover, .button2 img:active{
+        opacity: 1;
+      }
+      .button3 img{
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        height: 2%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 1rem #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
+
+      <img src="e6_base.png" alt="base" class="frame"/>
+      
+      <a href="#" class="button1">
+          <img src="e6_button01.jpg" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/_goodonghee/d/d4.html" class="button2">
+          <img src="e6_button02.png" alt="btn2" class="btn_img"/>
+      </a>
+      <a href="e6_download.zip" class="button3" download>
+        <img src="e6_button03.png" alt="btn2" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

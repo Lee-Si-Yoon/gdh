@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E4</title>
+    <style>
+      @import "../css/reset.css";
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 세로로 길면*/
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        overflow-x: hidden;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .button1 img{
+        position: absolute;
+        top: 9.9%;
+        left: 87%;
+        height: 16%;
+        padding: 2.5% 0;
+        background-color: white;
+        transform: translateX(-50%);
+        /*filter: drop-shadow(0 0 1rem blue);*/
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: 1;
+        filter: drop-shadow(0 0 1rem purple);
+      }
+      .button2 img{
+        position: absolute;
+        top: 40%;
+        left: 86%;
+        height: 10%;
+        transform: translateX(-50%);
+        /*filter: drop-shadow(0 0 3rem blue);*/
+      }
+      .button2 img:hover, .button2 img:active{
+        opacity: 1;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
+
+      <img src="e4_base.gif" alt="base" class="frame"/>
+      
+      <a href="https://lee-si-yoon.github.io/_goodonghee/f/f7.html" class="button1">
+          <img src="e4_button01.gif" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="#" class="button2">
+          <img src="e4_button02.gif" alt="btn2" class="btn_img"/>
+      </a>
+    </div>
+  </body>
+</html>

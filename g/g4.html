@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G4</title>
+    <style>
+      @import "../css/reset.css";
+      body{
+        background-color: #3D6D82;
+      }
+      .frame__container {
+        width: auto;
+        height: 100%;
+        /* 세로로 길면*/
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        overflow-x: hidden;
+      }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      .button1 img{
+        position: absolute;
+        top: 8.5%;
+        left: 85%;
+        height: 12%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 1rem #3D6D82);
+      }
+      .button1 img:hover, .button1 img:active{
+        opacity: .1;
+      }
+      .button2 img{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        height: 4%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 .3rem red);
+      }
+      .button2 img:hover, .button2 img:active{
+        opacity: .1;
+      }
+      /*.button3{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        height: 5%;
+        transform: translateX(-50%);
+      }*/
+      .button4{
+        position: absolute;
+        top: 23%;
+        left: 89%;
+        height: 7%;
+        transform: translateX(-50%);
+      }
+      .button5{
+        position: absolute;
+        top: 30%;
+        left: 89%;
+        height: 9.3%;
+        transform: translateX(-50%);
+      }
+      .button6{
+        position: absolute;
+        top: 39.2%;
+        left: 89%;
+        height: 12.5%;
+        transform: translateX(-50%);
+      }
+      .button7{
+        position: absolute;
+        top: 51%;
+        left: 89%;
+        height: 5%;
+        transform: translateX(-50%);
+      }
+      .button8{
+        position: absolute;
+        top: 55.5%;
+        left: 89%;
+        height: 10.6%;
+        transform: translateX(-50%);
+      }
+      .button9{
+        position: absolute;
+        top: 66.1%;
+        left: 89%;
+        height: 16.7%;
+        transform: translateX(-50%);
+      }
+      /*.button10{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        height: 5%;
+        transform: translateX(-50%);
+      }*/
+      .button11{
+        position: absolute;
+        top: 89%;
+        left: 8.5%;
+        height: 10%;
+        transform: translateX(-50%);
+      }
+      .button12{
+        position: absolute;
+        top: 89%;
+        left: 87%;
+        height: 10%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame__container">
+      <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
+
+      <img src="g4_base.png" alt="base" class="frame"/>
+      
+      <a href="#" class="button1">
+          <img src="g4_button01.jpg" alt="btn1" class="btn_img"/>
+      </a>
+      <a href="https://lee-si-yoon.github.io/_goodonghee/c/c3.html" class="button2">
+          <img src="g4_button02.gif" alt="btn2" class="btn_img"/>
+      </a>
+      <!--<img src="g4_image01.jpg" alt="btn2" class="button3"/>-->
+      <img src="g4_image02.jpg" alt="btn2" class="button4"/>
+      <img src="g4_image03.jpg" alt="btn2" class="button5"/>
+      <img src="g4_image04.jpg" alt="btn2" class="button6"/>
+      <img src="g4_image05.png" alt="btn2" class="button7"/>
+      <img src="g4_image06.jpg" alt="btn2" class="button8"/>
+      <img src="g4_image07.jpeg" alt="btn2" class="button9"/>
+      <!--<img src="g4_image08.jpg" alt="btn2" class="button10"/>-->
+      <img src="g4_image09.jpg" alt="btn2" class="button11"/>
+      <img src="g4_image10.jpg" alt="btn2" class="button12"/>
+    </div>
+  </body>
+</html>
