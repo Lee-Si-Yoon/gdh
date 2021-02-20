@@ -59,6 +59,8 @@
     </style>
   </head>
   <body>
+    <audio id="audio1" src="f2_sound01.m4a"></audio>
+    <audio id="audio2" src="f2_sound02.m4a"></audio>
     <div class="frame__container">
       <!--<iframe src="https://www.youtube.com/embed/HOgKDQp2BHE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>-->
 
@@ -71,5 +73,17 @@
           <img src="f2_button02.gif" alt="btn2" class="btn_img"/>
       </a>
     </div>
+    <script>
+      const button1 = document.querySelector('.button1')
+      button1.addEventListener('mouseover', function (e) {
+        e.preventDefault();
+        document.getElementById('audio1').play();
+      });
+      const button2 = document.querySelector('.button2')
+      button2.addEventListener('mouseover', function (e) {
+        e.preventDefault();
+        document.getElementById('audio2').play();
+      });
+    </script>
   </body>
 </html>
