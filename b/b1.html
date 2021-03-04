@@ -36,12 +36,8 @@
         left: 48.8%;
         top: 21.1%;
         transform: translateX(-50%);
-        box-shadow: 0 0 1rem red;
-      }
-      .button1 img:hover, .button1 img:active{
-        transform: translateX(-50%);
-        transform: scale(1.1);
-
+        box-shadow: 0 0 2rem red;
+        animation: blink .8s infinite;
       }
       .button2 img{
         position: absolute;
@@ -49,10 +45,15 @@
         left: 25.5%;
         top: 21.1%;
         transform: translateX(-50%);
-        box-shadow: 0 0 1rem red;
+        box-shadow: 0 0 2rem red;
+        animation: blink .8s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        transform: scale(1.1);
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }100%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

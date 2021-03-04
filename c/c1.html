@@ -36,9 +36,7 @@
         top: 99.15%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem blue);
-      }
-      .button1 img:hover, .button1 img:active{
-        filter: drop-shadow(0 0 2rem #333);
+        animation: blink .8s infinite;
       }
       .button2 img{
         position: absolute;
@@ -47,9 +45,14 @@
         top: 99.29%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem blue);
+        animation: blink .8s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        filter: drop-shadow(0 0 2rem #333);
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }100%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

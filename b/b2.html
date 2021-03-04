@@ -29,15 +29,23 @@
         /*가로로 길면
         height: 100%;*/
       }
+      .frame__container iframe {
+        /*세로로 길면*/
+        width: 95.7%;
+        height: 3.04%;
+        position: absolute;
+        top: 2.42%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
       .button1 img{
         position: absolute;
         height: .5%;
         left: 50%;
-        top: 1.84%;
+        top: 1.835%;
         transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        filter: drop-shadow(0 0 2rem #333);
+        filter: drop-shadow(0 0 2rem black);
+        animation: blink .8s infinite;
       }
       .button2 img{
         position: absolute;
@@ -46,14 +54,45 @@
         top: 3.8%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 2rem red);
+        animation: blink .8s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        transform: scale(1.1);
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }100%{
+          opacity: 1;
+        }
+      }
+      .dummy{
+        width: 95.7%;
+        height: .5%;
+        background-color: black;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 2.68%;
+        opacity: 0;
+      }
+      .dummy2{
+        width: 95.7%;
+        height: 1%;
+        background-color: black;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 5%;
+        opacity: 0;
       }
     </style>
   </head>
   <body>
     <div class="frame__container">
+      <iframe src="https://www.youtube.com/embed/9Iup70E0Ig0?rel=0&autoplay=1"
+          frameborder="0" allow='autoplay'></iframe>
+      <div class="dummy"></div>
+      <div class="dummy2"></div>
       <img src="b2_base.png" alt="b2_base" class="frame"/>
       <a href="https://lee-si-yoon.github.io/gdh/c/c3.html" class="button1">
           <img src="b2_button01.png" alt="btn1" class="btn_img"/>
