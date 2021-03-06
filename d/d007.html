@@ -33,35 +33,62 @@
       }
       .frame__container iframe {
         /*세로로 길면*/
-        width: 91%;
-        height: 12.6%;
+        width: 89.5%;
+        height: 17.3%;
         position: absolute;
-        top: 2.7%;
-        left: 3.3%;
+        top: 14.35%;
+        left: 49.75%;
+        transform: translate(-50%,-50%);
+      }
+      .dummy{
+        width: 89.5%;
+        height: 4.5%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 49.75%;
+        top: 7.9%;
+        opacity: 0;
+      }
+      .dummy2{
+        width: 89.5%;
+        height: 6.5%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 49.75%;
+        top: 19.7%;
+        opacity: 0;
       }
       .button1 img{
         position: absolute;
-        top: 0.2%;
-        left: 8%;
-        height: 1.6%;
-        background-color: white;
+        top: 2.2%;
+        left: 21%;
+        height: 3.2%;
         padding: 0 3%;
+        background-color: white;
+        transform: translate(-50%,-50%);
+        animation: blink 2s infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: 1;
       }
       .button2 img{
         position: absolute;
-        top: 25.7%;
-        left: 3.3%;
-        height: 3.3%;
+        top: 49.05%;
+        left: 22.2%;
+        height: 6.6%;
         background-color: #333;
-        padding: 0 3%;
+        padding: 0 4.5%;
+        transform: translate(-50%,-50%);
         /*filter: drop-shadow(0 0 1rem red);*/
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 1;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>
@@ -69,11 +96,13 @@
     <div class="frame__container">
       <img src="d7_base.png" alt="base" class="frame"/>
       <iframe src="https://www.youtube.com/embed/22_sVnNZvMI?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+      <div class="dummy"></div>
+      <div class="dummy2"></div>
       
-      <a href="https://lee-si-yoon.github.io/gdh/d/c04.html" class="button1">
+      <a href="https://lee-si-yoon.github.io/gdh/d/d07.html" class="button1">
           <img src="d7_button01.gif" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://lee-si-yoon.github.io/gdh/d/c04.html" class="button2">
+      <a href="https://lee-si-yoon.github.io/gdh/d/d07.html" class="button2">
           <img src="d7_button02.gif" alt="btn2" class="btn_img"/>
       </a>
     </div>

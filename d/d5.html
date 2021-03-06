@@ -31,44 +31,24 @@
         /*가로로 길면
         height: 100%;*/
       }
-      .frame__container iframe {
-        /*세로로 길면*/
-        width: 93.2%;
-        height: 29.1%;
-        position: absolute;
-        top: 6.2%;
-        left: 3.3%;
-      }
       .button1 img{
         position: absolute;
-        height: 9.3%;
-        left: 14.1%;
-        top: 16.1%;
-        opacity: .4;
-        transform: translateX(-50%);
-        /*box-shadow: 0 0 2rem white;
-        filter: drop-shadow(0 0 3rem red);*/
-      }
-      .button1 img:hover, .button1 img:active{
+        height: 22%;
+        left: 50%;
+        top: 80%;
         opacity: 1;
+        transform: translate(-50%,-50%);
+        /*box-shadow: 0 0 2rem white;*/
         filter: drop-shadow(0 0 2rem white);
+        animation: blink 2s infinite;
       }
-      .button2 img{
-        position: absolute;
-        height: 2.5%;
-        left: 61%;
-        top: 17.2%;
-        transform: translateX(-50%);
-        background-color: black;
-        padding: 50px 0;
-        cursor: default;
-        /*box-shadow: 0 0 1rem blue;
-        filter: drop-shadow(0 0 1rem white);*/
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 1;
-        /*filter: drop-shadow(0 0 2rem #333);*/
-      } 
     </style>
   </head>
   <body>

@@ -33,36 +33,36 @@
       }
       .button1 img{
         position: absolute;
-        height: 3%;
-        left: 20%;
-        top: 68%;
+        height: 3.5%;
+        left: 23%;
+        top: 65%;
         transform: translateX(-50%);
         /*box-shadow: 0 0 1rem greenyellow;*/
         filter: drop-shadow(0 0 1rem white);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: 0.5;
-        /*filter: drop-shadow(0 0 2rem #333);*/
+        animation: blink 2s infinite;
       }
       .button2 img{
         position: absolute;
-        height: 3%;
+        height: 3.5%;
         left: 75%;
-        top: 65%;
+        top: 60%;
         transform: translateX(-50%);
         /*box-shadow: 0 0 1rem blue;*/
         filter: drop-shadow(0 0 1rem white);
+        animation: blink 2s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 0.5;
-        /*filter: drop-shadow(0 0 2rem #333);*/
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
-
       .button3 {
         position: absolute;
-        height: 7%;
+        height: 8%;
         left: 50%;
-        top: 72%;
+        top: 70%;
         transform: translateX(-50%);
       }
     </style>

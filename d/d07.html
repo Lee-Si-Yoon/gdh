@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv = "refresh" content = "29; url = https://lee-si-yoon.github.io/gdh/d/d007.html" />
+    <!--<meta http-equiv = "refresh" content = "29; url = https://lee-si-yoon.github.io/gdh/d/d007.html" />-->
     <meta
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
@@ -13,6 +13,7 @@
     <title>D07</title>
     <style>
       @import "../css/reset.css";
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
       .frame__container {
         width: auto;
         height: 100%;
@@ -24,19 +25,38 @@
         position: relative;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .5);
         overflow-x: hidden;
       }
       .frame {
         /*세로로 길면*/
         width: 100%;
-        /*가로로 길면*/
-        height: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
+      audio{
+        background-color: none;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+      }
+      p{
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 120%;
       }
     </style>
   </head>
   <body>
-    <audio id="audio1" src="d07_audio.m4a" autoplay></audio>
+    <audio id="audio1" src="d07_audio.m4a" controls autoplay></audio>
+    <p>음성 안내에 따라주시길 바랍니다. please follow the audio guidance</p>
     <div class="frame__container">
       <img src="d07_base.gif" alt="base" class="frame"/>
     </div>
