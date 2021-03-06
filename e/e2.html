@@ -33,33 +33,37 @@
       }
       .button1 img{
         position: absolute;
-        top: 8%;
-        left: 85%;
-        height: 4.8%;
+        top: 4.5%;
+        left: 80%;
+        height: 10%;
         transform: translateX(-50%);
+        animation: blink 2s infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
       }
       .button2 img{
         position: absolute;
         top: 28%;
-        left: 76%;
-        height: 7%;
+        left: 78%;
+        height: 10%;
         transform: translateX(-50%);
+        animation: blink 1.5s infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
-      }
-      .button2 img:hover, .button2 img:active{
-        opacity: .1;
       }
       .button3 img{
         position: absolute;
-        top: 20.3%;
-        left: 50%;
-        height: 4.3%;
+        top: 20%;
+        left: 49.5%;
+        height: 5%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 .5rem blue);
+        animation: blink 1s infinite;
+      }
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

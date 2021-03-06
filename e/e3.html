@@ -19,7 +19,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.3);
@@ -27,7 +26,11 @@
       }
       .frame {
         /*세로로 길면*/
-        width: 100%;
+        width: 125%;
+        position: absolute;
+        top: 62.5%;
+        left: 62.5%;
+        transform: translate(-50%,-50%);
         /*가로로 길면
         height: 100%;*/
       }
@@ -38,9 +41,7 @@
         height: 12%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem blue);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
+        animation: blink 1.4s infinite;
       }
       .button2 img{
         position: absolute;
@@ -49,9 +50,14 @@
         height: 12%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 3rem blue);
+        animation: blink 1.1s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: .1;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

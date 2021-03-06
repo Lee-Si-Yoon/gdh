@@ -39,10 +39,8 @@
         padding: 0 4%;
         background-color: white;
         opacity: .3;
+        animation: blink 1.5s infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: 1;
       }
       .button2 img{
         position: absolute;
@@ -50,10 +48,15 @@
         left: 1.7%;
         height: 5.8%;
         opacity: .3;
+        animation: blink 1.2s infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 1;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

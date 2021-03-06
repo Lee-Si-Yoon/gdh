@@ -39,23 +39,24 @@
         padding: 2.5% 0;
         background-color: white;
         transform: translateX(-50%);
-        /*filter: drop-shadow(0 0 1rem blue);*/
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: 1;
-        filter: drop-shadow(0 0 1rem purple);
+        filter: drop-shadow(0 0 1rem blue);
+        animation: blink 1.2s infinite;
       }
       .button2 img{
         position: absolute;
         top: 40%;
-        left: 86%;
-        height: 10%;
+        left: 87%;
+        height: 12%;
         transform: translateX(-50%);
-        /*filter: drop-shadow(0 0 3rem blue);*/
+        filter: drop-shadow(0 0 1rem skyblue);
+        animation: blink 1s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 1;
-        cursor: default;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>
