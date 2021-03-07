@@ -40,30 +40,36 @@
         left: 49.8%;
         transform: translate(-50%,-50%);
       }
+
       .button1 img{
         position: absolute;
         width: 100%;
-        left: 50%;
-        top: 28.3%;
+        left: 0;
+        top: 26.3%;
         transform: translate(-50%,-50%);
         filter: drop-shadow(0 0 1rem red);
-        animation: blink .8s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         height: 3.17%;
-        left: 7.9%;
+        left: 1%;
         top: 0%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem red);
-        animation: blink .8s ease-in-out infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem blue);*/
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.1);
         }100%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
       .dummy{

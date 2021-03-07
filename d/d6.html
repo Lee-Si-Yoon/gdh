@@ -64,27 +64,32 @@
       }
       .button1 img{
         position: absolute;
-        top: 34.5%;
-        left: 32%;
+        top: 33.5%;
+        left: 28%;
         height: 2%;
         transform: translate(-50%,-50%);
         filter: drop-shadow(0 0 .2rem red);
-        animation: blink 1s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
-        top: 34.55%;
-        left: 45%;
+        top: 33.55%;
+        left: 43%;
         height: 2%;
         transform: translate(-50%,-50%);
         filter: drop-shadow(0 0 .2rem red);
-        animation: blink 1s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

@@ -34,19 +34,19 @@
       .button1 img{
         position: absolute;
         top: 4.5%;
-        left: 80%;
+        left: 60%;
         height: 10%;
         transform: translateX(-50%);
-        animation: blink 2s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
       }
       .button2 img{
         position: absolute;
         top: 28%;
-        left: 78%;
+        left: 62%;
         height: 10%;
         transform: translateX(-50%);
-        animation: blink 1.5s infinite;
+        animation: scaleup 1s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
       }
       .button3 img{
@@ -56,7 +56,19 @@
         height: 5%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 .5rem blue);
-        animation: blink 1s infinite;
+        animation: blink .8s infinite;
+      }
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
       @keyframes blink{
         0%{

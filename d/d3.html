@@ -39,7 +39,7 @@
         transform: translateX(-50%);
         /*box-shadow: 0 0 1rem greenyellow;*/
         filter: drop-shadow(0 0 1rem white);
-        animation: blink 2s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
@@ -49,13 +49,18 @@
         transform: translateX(-50%);
         /*box-shadow: 0 0 1rem blue;*/
         filter: drop-shadow(0 0 1rem white);
-        animation: blink 2s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.4);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
       .button3 {

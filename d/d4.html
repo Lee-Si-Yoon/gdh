@@ -43,18 +43,23 @@
       .button1 img{
         position: absolute;
         height: 0.95%;
-        left: 50%;
+        left: 18.5%;
         top: 18.7%;
         transform: translateX(-50%);
         /*box-shadow: 0 0 1rem greenyellow;*/
         filter: drop-shadow(0 0 1rem pink);
-        animation: blink 2s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
       .dummy{

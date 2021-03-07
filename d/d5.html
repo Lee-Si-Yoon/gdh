@@ -34,19 +34,24 @@
       .button1 img{
         position: absolute;
         height: 22%;
-        left: 50%;
-        top: 80%;
+        left: 42%;
+        top: 70%;
         opacity: 1;
         transform: translate(-50%,-50%);
         /*box-shadow: 0 0 2rem white;*/
-        filter: drop-shadow(0 0 2rem white);
-        animation: blink 2s infinite;
+        filter: drop-shadow(0 0 1rem grey);
+        animation: scaleup 1s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

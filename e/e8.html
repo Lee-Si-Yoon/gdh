@@ -37,20 +37,20 @@
       .button1 img{
         position: absolute;
         top: 9%;
-        left: 50%;
+        left: 42%;
         height: 7%;
         transform: translateX(-50%);
         box-shadow: 0 0 1rem blue;
-        animation: blink 1.2s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         top: 15%;
-        left: 85%;
+        left: 72%;
         height: 15%;
         box-shadow: 0 0 1rem blue;
         transform: translateX(-50%);
-        animation: blink 1s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       .button3{
@@ -69,11 +69,16 @@
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.1);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

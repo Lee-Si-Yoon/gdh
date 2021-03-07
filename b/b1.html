@@ -33,26 +33,31 @@
       .button1 img{
         position: absolute;
         height: 2%;
-        left: 48.8%;
+        left: 45%;
         top: 21.1%;
         transform: translateX(-50%);
         box-shadow: 0 0 2rem red;
-        animation: blink .8s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         height: 2%;
-        left: 25.5%;
+        left: 21.8%;
         top: 21.1%;
         transform: translateX(-50%);
         box-shadow: 0 0 2rem red;
-        animation: blink .8s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.4);
         }100%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

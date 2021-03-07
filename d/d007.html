@@ -8,7 +8,7 @@
       content="upgrade-insecure-requests"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D007</title>
+    <title>D7</title>
     <style>
       @import "../css/reset.css";
       .frame__container {
@@ -64,13 +64,13 @@
       }
       .button1 img{
         position: absolute;
-        top: 2.2%;
-        left: 21%;
+        top: .5%;
+        left: 10%;
         height: 3.2%;
         padding: 0 3%;
         background-color: white;
         transform: translate(-50%,-50%);
-        animation: blink 2s infinite;
+        animation: scaleup 1s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem red);*/
       }
       .button2 img{
@@ -83,11 +83,16 @@
         transform: translate(-50%,-50%);
         /*filter: drop-shadow(0 0 1rem red);*/
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

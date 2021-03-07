@@ -34,19 +34,19 @@
       .button1 img{
         position: absolute;
         height: 12%;
-        left: 33%;
+        left: 22%;
         top: 25%;
         transform: translate(-50%,-50%);
-        animation: blink .8s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem blue);*/
       }
       .button2 img{
         position: absolute;
         height: 12%;
-        left: 66%;
+        left: 55%;
         top: 25%;
         transform: translate(-50%,-50%);
-        animation: blink .8s infinite;
+        animation: scaleup 1s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem blue);*/
       }
       audio{
@@ -55,11 +55,16 @@
         top: 0;
         z-index: 999;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.4);
         }100%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>

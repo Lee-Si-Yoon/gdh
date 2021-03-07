@@ -34,28 +34,33 @@
       .button1 img{
         position: absolute;
         top: 9.9%;
-        left: 87%;
+        left: 75%;
         height: 16%;
         padding: 2.5% 0;
         background-color: white;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem blue);
-        animation: blink 1.2s infinite;
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         top: 40%;
-        left: 87%;
+        left: 75%;
         height: 12%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem skyblue);
-        animation: blink 1s infinite;
+        animation: scaleup 1.3s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
         }50%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>
