@@ -38,10 +38,7 @@
         height: 5.5%;
         opacity: .1;
         transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        /*box-shadow: 0 0 1rem blue;*/
-        opacity: 1;
+        animation: blink 1.2s infinite;
       }
       .button2 img{
         position: absolute;
@@ -50,11 +47,15 @@
         height: 5.5%;
         opacity: .1;
         transform: translateX(-50%);
+        animation: blink 1.5s infinite;
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
-      .button2 img:hover, .button2 img:active{
-        /*box-shadow: 0 0 1rem blue;*/
-        opacity: 1;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

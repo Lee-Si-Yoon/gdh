@@ -11,8 +11,11 @@
     <title>E8</title>
     <style>
       @import "../styles/reset.css";
+      body{
+        margin: 0;
+      }
       .frame__container {
-        width: auto;
+        width: 100%;
         height: 100%;
         /* 세로로 길면*/
         height: auto; 
@@ -33,42 +36,45 @@
       }
       .button1 img{
         position: absolute;
-        top: 10%;
-        left: 45%;
-        height: 6%;
+        top: 9%;
+        left: 50%;
+        height: 7%;
         transform: translateX(-50%);
         box-shadow: 0 0 1rem blue;
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .21;
+        animation: blink 1.2s infinite;
       }
       .button2 img{
         position: absolute;
         top: 15%;
-        left: 80%;
-        height: 10%;
+        left: 85%;
+        height: 15%;
         box-shadow: 0 0 1rem blue;
         transform: translateX(-50%);
+        animation: blink 1s infinite;
         /*animation: scalehim 1s ease-in-out infinite;*/
-      }
-      .button2 img:hover, .button2 img:active{
-        opacity: .1;
       }
       .button3{
         position: absolute;
-        top: 40%;
-        left: 80%;
+        top: 38%;
+        left: 85%;
         height: 15%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       .button4{
         position: absolute;
-        top: 2%;
-        left: 80%;
+        top: 3%;
+        left: 85%;
         height: 8%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
+      }
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
     </style>
   </head>

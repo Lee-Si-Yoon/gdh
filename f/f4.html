@@ -33,19 +33,29 @@
       }
       .button1 img{
         position: absolute;
-        top: 68.5%;
-        left: 52%;
-        height: 2.5%;
+        top: 68.3%;
+        left: 14%;
+        height: 2.8%;
         transform: translateX(-50%);
+        animation: scaleup 1s ease-in-out infinite;
       }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.1);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
       .button2{
         position: absolute;
         top: 69%;
-        left: 87%;
-        height: 2%;
+        left: 88%;
+        height: 3%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem white);
       }

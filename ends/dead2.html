@@ -12,7 +12,7 @@
     <style>
       @import "../css/reset.css";
       .frame__container {
-        width: auto;
+        width: 100%;
         height: 100%;
         /* 세로로 길면*/
         height: auto; 
@@ -25,39 +25,41 @@
         background-color: rgba(0, 0, 0, 0.3);
       }
       .frame {
-        /*세로로 길면
-        width: 100%;*/
+        /*세로로 길면*/
+        width: 250%;
         /*가로로 길면*/
         height: 100%;
       }
       .button1 img{
         position: absolute;
-        top: 64.8%;
+        top: 61%;
         left: 65%;
-        height: 5.3%;
+        height: 7%;
         transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: 1;
-        filter: drop-shadow(0 0 1rem white);
+        animation: blink .8s infinite;
       }
       .button2 img{
         position: absolute;
-        top: 70%;
+        top: 68%;
         left: 65%;
-        height: 6%;
+        height: 8%;
         transform: translateX(-50%);
+        animation: blink 1.1s infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: 1;
-        filter: drop-shadow(0 0 1rem white);
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
       .button3{
         position: absolute;
         top: 30%;
         left: 65%;
-        height: 10%;
+        height: 15%;
         transform: translateX(-50%);
+        filter: drop-shadow(0 0 3rem green);
       }
     </style>
   </head>

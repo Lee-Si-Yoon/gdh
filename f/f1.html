@@ -33,79 +33,57 @@
       }
       .button1 img{
         position: absolute;
-        top: 1.2%;
-        left: 10%;
-        height: 1.4%;
-        transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        box-shadow: 0 0 1rem blue;
-        opacity: 1;
-      }
-      .button2 img{
-        position: absolute;
-        top: 1.15%;
+        top: 2.3%;
         left: 50%;
         height: 1.5%;
         transform: translateX(-50%);
+        filter: drop-shadow(0 0 1rem blue);
+        animation: blink 1.6s infinite;
+      }
+      .button2 img{
+        position: absolute;
+        top: 4.5%;
+        left: 50%;
+        height: 2%;
+        transform: translateX(-50%);
+        animation: blink 1.3s infinite;
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
-      .button2 img:hover, .button2 img:active{
-        box-shadow: 0 0 1rem blue;
-        opacity: 1;
+      @keyframes blink{
+        0%{
+          opacity: 0;
+        }50%{
+          opacity: 1;
+        }
       }
       .button3{
         position: absolute;
-        top: 3.08%;
-        left: 22%;
+        top: 7%;
+        left: 15%;
         height: 1.55%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       .button4{
         position: absolute;
-        top: 3.08%;
-        left: 39%;
+        top: 7%;
+        left: 42%;
         height: 1.55%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       .button5{
         position: absolute;
-        top: 3.08%;
-        left: 55%;
+        top: 7%;
+        left: 65%;
         height: 1.55%;
-        transform: translateX(-50%);
-        /*animation: scalehim 1s ease-in-out infinite;*/
-      }
-      .button6{
-        position: absolute;
-        top: 7%;
-        left: 70.4%;
-        height: 2.1%;
-        transform: translateX(-50%);
-        /*animation: scalehim 1s ease-in-out infinite;*/
-      }
-      .button7{
-        position: absolute;
-        top: 7%;
-        left: 77.9%;
-        height: 2.1%;
-        transform: translateX(-50%);
-        /*animation: scalehim 1s ease-in-out infinite;*/
-      }
-      .button8{
-        position: absolute;
-        top: 7%;
-        left: 88.5%;
-        height: 2.1%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       .button9{
         position: absolute;
-        top: 3.08%;
-        left: 69%;
+        top: 7%;
+        left: 90%;
         height: 1.55%;
         transform: translateX(-50%);
         /*animation: scalehim 1s ease-in-out infinite;*/
@@ -127,9 +105,6 @@
       <img src="f1_image01.gif" alt="btn2" class="button3"/>
       <img src="f1_image02.gif" alt="btn2" class="button4"/>
       <img src="f1_image03.gif" alt="btn2" class="button5"/>
-      <img src="f1_image04.gif" alt="btn2" class="button6"/>
-      <img src="f1_image05.gif" alt="btn2" class="button7"/>
-      <img src="f1_image06.gif" alt="btn2" class="button8"/>
       <img src="f1_image07.gif" alt="btn2" class="button9"/>
     </div>
   </body>
