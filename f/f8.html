@@ -34,25 +34,33 @@
       .button1 img{
         position: absolute;
         top: 4.32%;
-        left: 50%;
+        left: 34%;
         height: 6.2%;
         padding: 1% 0;
         background-color: white;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem skyblue);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
+        animation: scaleup 1.3s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
-        top: 88.3%;
-        left: 16%;
-        height: 1.5%;
+        top: 88%;
+        left: 3%;
+        height: 2%;
         transform: translateX(-50%);
+        animation: scaleup 1s ease-in-out infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        opacity: .1;
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
     </style>
   </head>

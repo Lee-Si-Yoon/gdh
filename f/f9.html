@@ -24,46 +24,77 @@
         left: 0;
         background-color: rgba(0, 0, 0, .3);
         overflow-x: hidden;
-      }
-      .frame__container iframe {
-        /*세로로 길면*/
-        width: 91%;
-        height: 12.7%;
-        position: absolute;
-        top: 2.5%;
-        left: 3.3%;
-      }
+      }      
       .frame {
         /*세로로 길면*/
         width: 100%;
         /*가로로 길면
         height: 100%;*/
       }
+      .frame__container iframe {
+        /*세로로 길면*/
+        width: 100%;
+        height: 48.5%;
+        position: absolute;
+        top: 32.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .dummy{
+        width: 100%;
+        height: 15%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 16%;
+        opacity: 0;
+      }
+      .dummy2{
+        width: 100%;
+        height: 15%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 49%;
+        opacity: 0;
+      }
       .button1 img{
         position: absolute;
-        top: 1.8%;
-        left: 11%;
-        height: 3%;
+        top: 5%;
+        left: 2%;
+        height: 14%;
         transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        filter: drop-shadow(0 0 1rem red);
+        animation: scaleup 1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
-        top: 19.7%;
-        left: 82.5%;
-        height: 1.5%;
+        top: 82.8%;
+        left: 63%;
+        height: 7%;
         transform: translateX(-50%);
+        animation: scaleup 1.3s ease-in-out infinite;
       }
-      .button2 img:hover, .button2 img:active{
-        filter: drop-shadow(0 0 1rem red);
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
       .button3{
         position: absolute;
-        top: 17.5%;
-        left: 38%;
-        height: 1.5%;
+        top: 64.5%;
+        left: 31%;
+        height: 6%;
         transform: translateX(-50%);
       }
     </style>
@@ -72,6 +103,8 @@
     <div class="frame__container">
       <img src="f9_base.png" alt="base" class="frame"/>
       <iframe src="https://www.youtube.com/embed/4mm-Y9AOElE?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+      <div class="dummy"></div>
+      <div class="dummy2"></div>
       
       <a href="https://igmo.app/" class="button1">
           <img src="f9_button01.gif" alt="btn1" class="btn_img"/>

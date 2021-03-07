@@ -25,6 +25,12 @@
         background-color: rgba(0, 0, 0, 0);
         overflow-x: hidden;
       }
+      .frame {
+        /*세로로 길면*/
+        width: 100%;
+        /*가로로 길면
+        height: 100%;*/
+      }
       .frame__container iframe {
         width: 78%;
         height: 14%;
@@ -32,43 +38,56 @@
         top: 76.7%;
         left: 11%;
       }
-      .frame {
-        /*세로로 길면*/
-        width: 100%;
-        /*가로로 길면
-        height: 100%;*/
+      .dummy{
+        width: 78%;
+        height: 5%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 79%;
+        opacity: 0;
+      }
+      .dummy2{
+        width: 78%;
+        height: 5%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 88.5%;
+        opacity: 0;
       }
       .button1 img{
         position: absolute;
         top: 3.7%;
-        left: 50%;
+        left: 30%;
         height: 12%;
         transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
-      }
-      .button2 {
-        position: absolute;
-        top: 89.3%;
-        left: 50%;
-        width: 100%;
-        height: 1.5%;
-        background-color: teal;
-        transform: translateX(-50%);
-        filter: drop-shadow(0 0 1rem green);
-        opacity: 0;
-      }
-      .button2:hover, .button2:active{
-        opacity: .1;
+        animation: scaleup 1s ease-in-out infinite;
+        filter: drop-shadow(0 0 .6rem grey);
       }
       .button3 {
         position: absolute;
-        top: 94%;
-        left: 12%;
-        height: 2.8%;
+        top: 93.5%;
+        left: 13%;
+        height: 4%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem white);
+      }
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
     </style>
   </head>
@@ -76,11 +95,12 @@
     <div class="frame__container">
       <img src="g6_base.png" alt="base" class="frame" />
       <iframe src="https://www.youtube.com/embed/6Y5E5orU9tM?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
+      <div class="dummy"></div>
+      <div class="dummy2"></div>
       
       <a href="https://cyberbureau.police.go.kr/mobile/tm/sub/sub_02.jsp" class="button1">
         <img src="g6_button01.png" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://cyberbureau.police.go.kr/mobile/tm/sub/sub_02.jsp" class="button2"></a>
       <img src="g6_image.gif" alt="btn1" class="button3"/>
     </div>
   </body>

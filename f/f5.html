@@ -12,7 +12,7 @@
     <style>
       @import "../css/reset.css";
       .frame__container {
-        width: auto;
+        width: 100%;
         height: 100%;
         /* 가로로 길면*/ 
         height: auto;
@@ -27,11 +27,34 @@
       }
       .frame__container iframe {
         /*세로로 길면*/
-        width: 91%;
-        height: 12%;
+        width: 100%;
+        height: 11.5%;
         position: absolute;
-        top: 2.5%;
-        left: 3.3%;
+        top: 7.7%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .dummy{
+        width: 100%;
+        height: 3%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 3.5%;
+        opacity: 0;
+      }
+      .dummy2{
+        width: 100%;
+        height: 4.5%;
+        background-color: tomato;
+        /*border : 1px solid white;*/
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 48.3%;
+        top: 11.3%;
+        opacity: 0;
       }
       .frame {
         /*세로로 길면*/
@@ -41,28 +64,43 @@
       }
       .button1 img{
         position: absolute;
-        top: 7.5%;
-        left: 48.7%;
-        height: 2%;
-        transform: translateX(-50%);
-      }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
+        top: 6.2%;
+        left: 43%;
+        height: 2.8%;
+        transform: translate(-50%,-50%);
+        filter: drop-shadow(0 0 1rem red);
+        animation: scaleup 1.2s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
-        top: 22.6%;
-        left: 15.2%;
-        height: 3.1%;
-        transform: translateX(-50%);
+        top: 26.2%;
+        left: 7%;
+        height: 10%;
+        padding: 1% 0;
+        background-color: rgba(0, 0, 0, 1);
+        transform: translate(-50%,-50%);
         filter: drop-shadow(0 0 1rem pink);
+        animation: scaleup 1s ease-in-out infinite;
+      }
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.1);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
       .button3{
         position: absolute;
-        top: 18.4%;
+        top: 19.4%;
         left: 83%;
         height: 2.4%;
-        transform: translateX(-50%);
+        transform: translate(-50%);
+        filter: drop-shadow(0 0 .3rem red);
       }
     </style>
   </head>
@@ -70,7 +108,9 @@
     <div class="frame__container">
       <img src="f5_base.png" alt="base" class="frame"/>
       <iframe src="https://www.youtube.com/embed/9x7vQi0UG8o?rel=0&amp;autoplay=1" allow='autoplay'></iframe>
-            
+      <div class="dummy"></div>
+      <div class="dummy2"></div>
+      
       <a href="https://lee-si-yoon.github.io/gdh/g/g4.html" class="button1">
           <img src="f5_button01.gif" alt="btn1" class="btn_img"/>
       </a>

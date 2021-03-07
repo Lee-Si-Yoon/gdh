@@ -38,13 +38,23 @@
       .button1 img{
         position: absolute;
         top: 74%;
-        left: 50%;
+        left: 41%;
         height: 19.5%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 1rem pink);
+        animation: scaleup 1s ease-in-out infinite;
       }
-      .button1 img:hover, .button1 img:active{
-        opacity: .1;
+      @keyframes scaleup {
+        0%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.2);
+        }100%{
+          transform: translateX(-50%);
+          transform: scale(1);
+        }
       }
     </style>
   </head>
