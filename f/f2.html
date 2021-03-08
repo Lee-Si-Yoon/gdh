@@ -38,7 +38,7 @@
         height: 5.5%;
         opacity: .1;
         transform: translateX(-50%);
-        animation: blink 1.2s infinite;
+        animation: blink 1.2s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
@@ -47,7 +47,7 @@
         height: 5.5%;
         opacity: .1;
         transform: translateX(-50%);
-        animation: blink 1.5s infinite;
+        animation: blink 1.5s ease-in-out infinite;
         /*animation: scalehim 1s ease-in-out infinite;*/
       }
       @keyframes blink{
@@ -55,6 +55,8 @@
           opacity: 0;
         }50%{
           opacity: 1;
+        }100%{
+          opacity: 0;
         }
       }
     </style>
@@ -67,10 +69,10 @@
 
       <img src="f2_base.png" alt="base" class="frame"/>
 
-      <a href="https://lee-si-yoon.github.io/gdh/d/d5.html" class="button1">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d5.html" class="button1">
           <img src="f2_button01.gif" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://lee-si-yoon.github.io/gdh/d/d5.html" class="button2">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d5.html" class="button2">
           <img src="f2_button02.gif" alt="btn2" class="btn_img"/>
       </a>
     </div>

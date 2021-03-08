@@ -44,21 +44,20 @@
       .button1 img{
         position: absolute;
         height: 1%;
-        left: 10.5%;
+        left: 0.5%;
         top: 0.05%;
         transform: translateX(-50%);
-        filter: drop-shadow(0 0 .3rem grey);
-        animation: blink .8s infinite;
+        filter: drop-shadow(0 0 .1rem black);
+        animation: scaleup 1.1s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         height: .5%;
-        left: 81%;
+        left: 78%;
         top: 0.3%;
         transform: translateX(-50%);
-        opacity: 1;
-        animation: blink .8s infinite;
-        filter: drop-shadow(0 0 .3rem grey);
+        filter: drop-shadow(0 0 .1rem black);
+        animation: scaleup 1.3s ease-in-out infinite;
       }
       .button3{
         position: absolute;
@@ -71,20 +70,25 @@
       .button4{
         position: absolute;
         width: 92.5%;
-        left: 50%;
-        top: 56.18%;
+        left: 3.9%;
+        top: 55.74%;
         background-color: white;
         padding: 3% 0;
         transform: translate(-50%,-50%);
         box-shadow: 0 0 1rem skyblue;
-        animation: blink .8s infinite;
+        animation: scaleup 1s ease-in-out infinite;
         /*filter: drop-shadow(0 0 1rem blue);*/
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0.7;
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.02);
         }100%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
       .dummy{
@@ -119,10 +123,10 @@
       <div class="dummy"></div>
       <div class="dummy2"></div>
       
-      <a href="https://lee-si-yoon.github.io/gdh/b/b1.html" class="button1">
+      <a href="https://lee-si-yoon.github.io/bookmark/b/b1.html" class="button1">
           <img src="a1_botton01.png" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://lee-si-yoon.github.io/gdh/b/b2.html" class="button2">
+      <a href="https://lee-si-yoon.github.io/bookmark/b/b2.html" class="button2">
         <img src="a1_button02.png" alt="btn2" class="btn_img"/>
       </a>
       <img src="a1_button03.gif" alt="btn2" class="button3"/>

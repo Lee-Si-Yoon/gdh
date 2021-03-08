@@ -32,26 +32,31 @@
       .button1 img{
         position: absolute;
         height: 1%;
-        left: 23.5%;
+        left: 1%;
         top: 88.5%;
         transform: translateX(-50%);
-        filter: drop-shadow(0 0 1rem blue);
-        animation: blink .8s infinite;
+        filter: drop-shadow(0 0 .2rem blue);
+        animation: scaleup 1.3s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
         height: 1%;
-        left: 21.5%;
+        left: 1%;
         top: 90.1%;
         transform: translateX(-50%);
-        filter: drop-shadow(0 0 1rem blue);
-        animation: blink .8s infinite;
+        filter: drop-shadow(0 0 .2rem blue);
+        animation: scaleup 1.1s ease-in-out infinite;
       }
-      @keyframes blink{
+      @keyframes scaleup {
         0%{
-          opacity: 0;
+          transform: translateX(-50%);
+          transform: scale(1);
+        }50%{
+          transform: translateX(-50%);
+          transform: scale(1.02);
         }100%{
-          opacity: 1;
+          transform: translateX(-50%);
+          transform: scale(1);
         }
       }
     </style>
@@ -59,10 +64,10 @@
   <body>
     <div class="frame__container">
       <img src="c1_base.jpg" alt="b2_base" class="frame" />
-      <a href="https://lee-si-yoon.github.io/gdh/d/d1.html" class="button1">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d1.html" class="button1">
           <img src="c1_button01.png" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://lee-si-yoon.github.io/gdh/d/d2.html" class="button2">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d2.html" class="button2">
           <img src="c1_button02.png" alt="btn2" class="btn_img"/>
       </a>
     </div>

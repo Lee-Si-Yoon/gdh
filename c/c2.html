@@ -26,34 +26,28 @@
         overflow-x: hidden;
       }
       .frame{
-        /*세로로 길면*/
-        width: 100%;
-        /*가로로 길면
-        height: 100%;*/
+        /*세로로 길면
+        width: 100%;*/
+        /*가로로 길면*/
+        height: 100%;
       }
       .button1 img{
         position: absolute;
-        height: 14%;
-        left: 30%;
-        top: 47.5%;
+        height: 18%;
+        left: 52%;
+        top: 35%;
         transform: translate(-50%,-50%);
-        filter: drop-shadow(0 0 1rem orange);
-        animation: rotation 1s ease-in-out infinite;
-      }
-      .button1 img:hover, .button1 img:active{
-        filter: drop-shadow(0 0 2rem #333);
+        filter: drop-shadow(0 0 .5rem orange);
+        animation: rotation 3s ease-in-out infinite;
       }
       .button2 img{
         position: absolute;
-        height: 9%;
-        left: 75%;
-        top: 47.5%;
+        height: 11%;
+        left: 50%;
+        top: 66%;
         transform: translate(-50%,-50%);
-        filter: drop-shadow(0 0 1rem red);
-        animation: rotation 2s ease-in-out infinite;
-      }
-      .button2 img:hover, .button2 img:active{
-        filter: drop-shadow(0 0 2rem #333);
+        filter: drop-shadow(0 0 .3rem red);
+        animation: rotation 3.3s ease-in-out infinite;
       }
       @keyframes rotation {
         from{
@@ -67,10 +61,10 @@
   <body>
     <div class="frame__container">
       <img src="c2_base.gif" alt="b2_base" class="frame"/>
-      <a href="https://lee-si-yoon.github.io/gdh/d/d3.html" class="button1">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d3.html" class="button1">
           <img src="c2_button_01.png" alt="btn1" class="btn_img"/>
       </a>
-      <a href="https://lee-si-yoon.github.io/gdh/d/d4.html" class="button2">
+      <a href="https://lee-si-yoon.github.io/bookmark/d/d4.html" class="button2">
           <img src="c2_button_02.png" alt="btn2" class="btn_img"/>
       </a>
     </div>
